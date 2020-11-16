@@ -42,7 +42,8 @@ class Foodie extends Model
                                     ->get()->toArray();
         //As data set increases.
         //$similarFoodieByCuisine = [];
-        //$similarFoodieByRestaurants = [];
+        //$similarFoodieByRestaurantsVisited = [];
+        //$similarFoodieByRestaurantsVisitedAndThereRatings = [];
         
         return array_merge($total,$similarFavouriteFood);
     }

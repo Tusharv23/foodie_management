@@ -17,6 +17,10 @@ class FoodieController extends Controller
 
     }
 
+    //below function fetches similar foodies 
+    //on the basis of favourite food as data set 
+    //increase we can get them on the basis of cuisine too 
+    //and so on as written in model.
     public function getSimilarFoodie(Request $request, $id)
     {
         $foodieExists = Foodie::find($id);
@@ -31,6 +35,7 @@ class FoodieController extends Controller
         return $this->response;
     }
 
+    //below function fetches similar restaurants on the basis of users favourite food and cuisine
     public function getSimilarRestaurant(Request $request, $id)
     {
         $foodieExists = Foodie::find($id);
